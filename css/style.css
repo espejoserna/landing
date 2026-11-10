@@ -1,6 +1,6 @@
 /* Estilo Kandinsky — tokens de color para tema claro y oscuro.
-   El tema oscuro se activa solo, según la preferencia del sistema del visitante.
-   Para forzar un tema, añade data-theme="light" o data-theme="dark" a <html>. */
+   El sitio abre en claro. El botón del menú cambia a oscuro (data-theme="dark" en <html>)
+   y recuerda la elección en ese navegador. */
 
 :root {
   --ground: #E9E7E1;      /* fondo de página */
@@ -18,26 +18,6 @@
   --violet: #5B4FA0;
   --rust: #A4502E;
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --ground: #161616;
-    --paper: #201F1D;
-    --ink: #ECE9E2;
-    --ink-deep: #0C0C0C;
-    --text-2: #CFCAC0;
-    --muted: #B3AEA4;
-    --rule: #3A3833;
-    --rule-soft: #2E2C29;
-    --border: #34322E;
-    --chip-border: #6E6A62;
-    --label: #E8957A;
-    --red: #E05A3C;
-    --violet: #8E83D6;
-    --rust: #C2683F;
-    color-scheme: dark;
-  }
 }
 
 :root[data-theme="dark"] {
@@ -68,4 +48,20 @@ a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
+}
+
+/* Botón de tema */
+.theme-toggle {
+  display: inline-flex; align-items: center; gap: 8px;
+  min-height: 44px; padding: 0 14px;
+  border: 1px solid var(--chip-border); border-radius: 0;
+  background: transparent; color: var(--ink);
+  font: 500 14px/1 "Public Sans", system-ui, sans-serif; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--ink); }
+.theme-toggle:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.theme-icon {
+  width: 14px; height: 14px; border-radius: 50%; box-sizing: border-box;
+  border: 3px solid var(--ink);
+  background: radial-gradient(circle, var(--red) 0 22%, var(--paper) 26%);
 }

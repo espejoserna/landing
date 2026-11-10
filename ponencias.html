@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<script>try{if(localStorage.getItem("tema")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,13 +19,14 @@
 <header style="max-width: 1240px; margin: 0 auto; padding: 24px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
 <a href="index.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; text-decoration: none; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.02em"><span aria-hidden="true">←</span>
 <span aria-hidden="true" style="width: 20px; height: 20px; border: 5px solid var(--ink); border-radius: 50%; background: var(--paper); box-sizing: border-box; display: flex; align-items: center; justify-content: center"><span style="width: 4px; height: 4px; border-radius: 50%; background: var(--red)"></span></span>ESPEJO-SERNA</a>
-<nav aria-label="Secciones" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<nav aria-label="Secciones" style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
 <a href="investigacion.html" style="text-decoration: none">Investigación</a>
 <a href="publicaciones.html" style="text-decoration: none">Publicaciones</a>
 <a href="ponencias.html" aria-current="page" style="text-decoration: none; font-weight: 600; border-bottom: 2px solid var(--ink)">Ponencias</a>
 <a href="docencia.html" style="text-decoration: none">Docencia</a>
 <a href="proyeccion-social.html" style="text-decoration: none">Proyección social</a>
 <a href="trayectoria.html" style="text-decoration: none">Trayectoria</a>
+<button type="button" class="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro"><span class="theme-icon" aria-hidden="true"></span><span class="theme-text">Oscuro</span></button>
 </nav>
 </header>
 
@@ -107,5 +109,6 @@
 </footer>
 
 </div>
+<script src="js/theme.js"></script>
 </body>
 </html>

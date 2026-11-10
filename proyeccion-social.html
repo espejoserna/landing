@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<script>try{if(localStorage.getItem("tema")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,13 +19,14 @@
 <header style="max-width: 1240px; margin: 0 auto; padding: 24px clamp(20px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between">
 <a href="index.html" style="display: inline-flex; align-items: center; gap: 12px; min-height: 44px; text-decoration: none; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 18px; letter-spacing: 0.02em"><span aria-hidden="true">←</span>
 <span aria-hidden="true" style="width: 20px; height: 20px; border: 5px solid var(--ink); border-radius: 50%; background: var(--paper); box-sizing: border-box; display: flex; align-items: center; justify-content: center"><span style="width: 4px; height: 4px; border-radius: 50%; background: var(--red)"></span></span>ESPEJO-SERNA</a>
-<nav aria-label="Secciones" style="display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
+<nav aria-label="Secciones" style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px 24px; font-size: 15px">
 <a href="investigacion.html" style="text-decoration: none">Investigación</a>
 <a href="publicaciones.html" style="text-decoration: none">Publicaciones</a>
 <a href="ponencias.html" style="text-decoration: none">Ponencias</a>
 <a href="docencia.html" style="text-decoration: none">Docencia</a>
 <a href="proyeccion-social.html" aria-current="page" style="text-decoration: none; font-weight: 600; border-bottom: 2px solid var(--ink)">Proyección social</a>
 <a href="trayectoria.html" style="text-decoration: none">Trayectoria</a>
+<button type="button" class="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro"><span class="theme-icon" aria-hidden="true"></span><span class="theme-text">Oscuro</span></button>
 </nav>
 </header>
 
@@ -41,14 +43,14 @@
 <span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">TALLER · 3 DE JULIO DE 2026</span>
 <h2 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">Primeros auxilios filosóficos para la era digital</h2>
 <p style="margin: 0; color: var(--text-2)">Espacio práctico de formación con herramientas de pensamiento crítico para analizar nuestras opiniones, creencias y dinámicas de interacción en entornos virtuales.</p>
-<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Escuela de Artes, Universidad Central</dd><dt style="color: var(--muted)">Participantes</dt><dd style="margin: 0">10 profesores y directivos</dd><dt style="color: var(--muted)">Rol</dt><dd style="margin: 0">Tallerista</dd></dl>
+<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Escuela de Artes, Universidad Central, Bogotá</dd><dt style="color: var(--muted)">Participantes</dt><dd style="margin: 0">10 profesores y directivos</dd><dt style="color: var(--muted)">Rol</dt><dd style="margin: 0">Tallerista</dd><dt style="color: var(--muted)">Evidencia</dt><dd style="margin: 0"><a href="https://www.instagram.com/p/DbYoIMlkfQk/">Publicación en Instagram</a></dd></dl>
 </article>
 
 <article style="background: var(--paper); border: 1px solid var(--border); border-top: 4px solid var(--violet); padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">CONFERENCIA · CHÍA</span>
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">CONFERENCIA · OCT 2026 · CHÍA</span>
 <h2 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">Educación e inteligencia artificial en el aula</h2>
 <p style="margin: 0; color: var(--text-2)">Reflexión sobre el papel transformador de la educación en nuestras comunidades frente a los retos y preguntas que plantea la inteligencia artificial en el aula contemporánea.</p>
-<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Colegio Bojacá, Chía</dd><dt style="color: var(--muted)">Asistentes</dt><dd style="margin: 0">Entre 60 y 100, aprox.</dd><dt style="color: var(--muted)">Rol</dt><dd style="margin: 0">Conferencista invitado</dd></dl>
+<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Colegio Bojacá, Chía</dd><dt style="color: var(--muted)">Asistentes</dt><dd style="margin: 0">Entre 60 y 100, aprox.</dd><dt style="color: var(--muted)">Público</dt><dd style="margin: 0">Docentes, estudiantes y padres</dd><dt style="color: var(--muted)">Rol</dt><dd style="margin: 0">Conferencista invitado</dd><dt style="color: var(--muted)">Evidencia</dt><dd style="margin: 0"><a href="https://www.instagram.com/p/DbqX9mEDRDx/">Publicación en Instagram</a></dd></dl>
 </article>
 
 <article style="background: var(--paper); border: 1px solid var(--border); border-top: 4px solid #E8C23A; padding: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -59,10 +61,10 @@
 </article>
 
 <article style="background: var(--paper); border: 1px solid var(--border); border-top: 4px solid var(--rust); padding: 32px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">JURADO</span>
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">JURADO · OCT 2026</span>
 <h2 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 26px; line-height: 1.2">Boxeo Filosófico</h2>
-<p style="margin: 0; color: var(--text-2)">Jurado del certamen de debate argumentativo entre estudiantes de la Universidad de La Sabana.</p>
-<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Universidad de La Sabana</dd></dl>
+<p style="margin: 0; color: var(--text-2)">Jurado del certamen de debate argumentativo entre estudiantes de colegios, organizado por la Universidad de La Sabana.</p>
+<dl style="margin: 4px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 15px"><dt style="color: var(--muted)">Institución</dt><dd style="margin: 0">Universidad de La Sabana, Chía</dd><dt style="color: var(--muted)">Público</dt><dd style="margin: 0">Estudiantes de colegios y público asistente</dd><dt style="color: var(--muted)">Rol</dt><dd style="margin: 0">Jurado</dd><dt style="color: var(--muted)">Evidencia</dt><dd style="margin: 0"><a href="https://www.instagram.com/p/DdHko_zD1qA/">Publicación en Instagram</a></dd></dl>
 </article>
 
 <article style="background: var(--paper); border: 1px solid var(--border); border-top: 4px solid var(--red); padding: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -95,5 +97,6 @@
 </footer>
 
 </div>
+<script src="js/theme.js"></script>
 </body>
 </html>

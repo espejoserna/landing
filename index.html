@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<script>try{if(localStorage.getItem("tema")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,12 +20,13 @@
 <a href="#inicio" style="display: flex; align-items: center; gap: 12px; text-decoration: none; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 20px; letter-spacing: 0.02em">
 <span aria-hidden="true" style="width: 22px; height: 22px; border: 5px solid var(--ink); border-radius: 50%; background: var(--paper); box-sizing: border-box; display: flex; align-items: center; justify-content: center"><span style="width: 5px; height: 5px; border-radius: 50%; background: var(--red)"></span></span>
 ESPEJO-SERNA</a>
-<nav aria-label="Secciones" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; font-weight: 500">
+<nav aria-label="Secciones" style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px 28px; font-size: 15px; font-weight: 500">
 <a href="#investigacion" style="text-decoration: none">Investigación</a>
 <a href="#publicaciones" style="text-decoration: none">Publicaciones</a>
 <a href="#docencia" style="text-decoration: none">Docencia</a>
 <a href="#comunidad" style="text-decoration: none">Proyección social</a>
 <a href="#contacto" style="text-decoration: none; background: var(--ink); color: var(--ground); padding: 10px 18px">Contacto</a>
+<button type="button" class="theme-toggle" aria-pressed="false" aria-label="Cambiar a modo oscuro"><span class="theme-icon" aria-hidden="true"></span><span class="theme-text">Oscuro</span></button>
 </nav>
 </header>
 
@@ -170,7 +172,7 @@ ESPEJO-SERNA</a>
 <p style="margin: 0; color: var(--text-2); font-size: 16px">Herramientas de pensamiento crítico para analizar opiniones, creencias e interacciones en entornos virtuales. Para profesores y directivos de la Escuela de Artes, Universidad Central.</p>
 </article>
 <article style="background: var(--paper); color: var(--ink); border: 1px solid var(--border); border-top: 4px solid var(--violet); padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">CONFERENCIA · CHÍA</span>
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">CONFERENCIA · OCT 2026 · CHÍA</span>
 <h3 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">Educación e inteligencia artificial en el aula</h3>
 <p style="margin: 0; color: var(--text-2); font-size: 16px">Conferencista invitado en el Colegio Bojacá sobre el papel transformador de la educación en las comunidades frente a los retos de la IA.</p>
 </article>
@@ -180,9 +182,9 @@ ESPEJO-SERNA</a>
 <p style="margin: 0; color: var(--text-2); font-size: 16px">Coordinador académico en Unisabana HUB: 120 horas, 173 matriculados, 124 certificados y satisfacción de 4,71 sobre 5.</p>
 </article>
 <article style="background: var(--paper); color: var(--ink); border: 1px solid var(--border); border-top: 4px solid var(--rust); padding: 28px 32px 32px; display: flex; flex-direction: column; gap: 12px">
-<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">JURADO</span>
+<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; font-size: 13px; color: var(--label)">JURADO · OCT 2026</span>
 <h3 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">Boxeo Filosófico</h3>
-<p style="margin: 0; color: var(--text-2); font-size: 16px">Jurado del certamen de debate argumentativo entre estudiantes de la Universidad de La Sabana.</p>
+<p style="margin: 0; color: var(--text-2); font-size: 16px">Jurado del certamen de debate argumentativo entre estudiantes de colegios, organizado por la Universidad de La Sabana.</p>
 </article>
 </div>
 <a href="proyeccion-social.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; box-sizing: border-box; color: var(--ink); text-decoration: none; font-weight: 600; font-size: 16px; border-bottom: 2px solid var(--ink)">Ver más proyección social<span aria-hidden="true">→</span></a>
@@ -217,7 +219,7 @@ ESPEJO-SERNA</a>
 <div style="display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end; justify-content: space-between">
 <h2 style="margin: 0; font-family: 'Jost', 'Futura', sans-serif; font-weight: 600; font-size: clamp(40px, 5.5vw, 72px); line-height: 1; letter-spacing: -0.01em; max-width: 11em; text-wrap: balance">Conversemos sobre mente, percepción y tecnología.</h2>
 <div style="display: flex; flex-direction: column; gap: 12px; font-size: 16px">
-<span style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: #E8C23A">[TU CORREO]</span>
+<a href="mailto:juan.espejo1@unisabana.edu.co" style="font-family: 'IBM Plex Mono', ui-monospace, monospace; color: #E8C23A">juan.espejo1@unisabana.edu.co</a>
 <a href="https://orcid.org/0000-0002-1717-6630" style="color: #E9E7E1">ORCID 0000-0002-1717-6630</a>
 <span style="color: #B9B4A9">Facultad de Filosofía y Ciencias Humanas, Universidad de La Sabana, Chía</span>
 </div>
@@ -230,5 +232,6 @@ ESPEJO-SERNA</a>
 </footer>
 
 </div>
+<script src="js/theme.js"></script>
 </body>
 </html>
