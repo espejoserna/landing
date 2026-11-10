@@ -1,0 +1,71 @@
+/* Estilo Kandinsky — tokens de color para tema claro y oscuro.
+   El tema oscuro se activa solo, según la preferencia del sistema del visitante.
+   Para forzar un tema, añade data-theme="light" o data-theme="dark" a <html>. */
+
+:root {
+  --ground: #E9E7E1;      /* fondo de página */
+  --paper: #F6F4EF;       /* tarjetas, marco de foto, relleno del anillo */
+  --ink: #1A1A1A;         /* texto y estructura */
+  --ink-deep: #1A1A1A;    /* bandas oscuras (ponencias, pie) */
+  --text-2: #3B3833;      /* párrafos secundarios */
+  --muted: #4A463F;       /* metadatos */
+  --rule: #B9B4A9;        /* separadores de lista */
+  --rule-soft: #D3CFC6;   /* separadores de tabla */
+  --border: #C9C4BA;      /* bordes de tarjeta */
+  --chip-border: #8C877E; /* bordes de etiquetas */
+  --label: #8A3A1E;       /* etiquetas mono sobre papel */
+  --red: #D9482B;
+  --violet: #5B4FA0;
+  --rust: #A4502E;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #161616;
+    --paper: #201F1D;
+    --ink: #ECE9E2;
+    --ink-deep: #0C0C0C;
+    --text-2: #CFCAC0;
+    --muted: #B3AEA4;
+    --rule: #3A3833;
+    --rule-soft: #2E2C29;
+    --border: #34322E;
+    --chip-border: #6E6A62;
+    --label: #E8957A;
+    --red: #E05A3C;
+    --violet: #8E83D6;
+    --rust: #C2683F;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --ground: #161616;
+  --paper: #201F1D;
+  --ink: #ECE9E2;
+  --ink-deep: #0C0C0C;
+  --text-2: #CFCAC0;
+  --muted: #B3AEA4;
+  --rule: #3A3833;
+  --rule-soft: #2E2C29;
+  --border: #34322E;
+  --chip-border: #6E6A62;
+  --label: #E8957A;
+  --red: #E05A3C;
+  --violet: #8E83D6;
+  --rust: #C2683F;
+  color-scheme: dark;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ground); color: var(--ink); }
+img { max-width: 100%; height: auto; }
+
+a { color: var(--ink); }
+a:hover { color: var(--rust); }
+a:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
